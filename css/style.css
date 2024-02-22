@@ -147,13 +147,14 @@ main {
 
 }
 
-.text-content{
+.text-content {
     margin: 20px auto;
 }
-.button-apple{
-    background-color:var(--color-header);
+
+.button-apple {
+    background-color: var(--color-header);
     color: white;
-    border-radius: 30px ;
+    border-radius: 30px;
     padding: 10px;
     margin: 40px auto;
 }
@@ -260,14 +261,16 @@ main {
 #about-us i {
     color: #9792e4;
 }
- 
-#about-us h2{
+
+#about-us h2 {
     color: #9792e4;
     font-size: 4em;
 }
-#about-us h3{
+
+#about-us h3 {
     color: #9792e4;
 }
+
 .img-about {
     width: 50%;
     aspect-ratio: 1 / 1;
@@ -293,31 +296,33 @@ main {
 .button-about {
     background-color: #9792e4;
     border-radius: 20px;
-    
+
 }
 
 
 /* get started */
 
-#get-started{
+#get-started {
     text-align: center;
     color: white;
 }
-#get-started h2{
+
+#get-started h2 {
     color: #fdc15f;
     font-size: 6em;
 }
-#get-started h3{
+
+#get-started h3 {
     font-size: 3em;
-    
+
 }
 
-#get-started h4{
+#get-started h4 {
     font-weight: 100;
 }
 
-.button-get{
-    background-color: white ;
+.button-get {
+    background-color: white;
     padding: 10px;
     border-radius: 30px;
     margin: 20px auto;
@@ -364,7 +369,7 @@ footer {
 @media screen and (min-width:992px) {
 
     header div.container {
-        max-width: 992px;
+        max-width: 100%;
     }
 
     #info .card:first-child {
@@ -391,7 +396,7 @@ footer {
     /* testimonial */
 
     #partner .container {
-        max-width: 992px;
+        max-width: 100%
     }
 
     .card-testimonials {
@@ -410,67 +415,119 @@ footer {
 
 
 
-/* work with us */
+    /* work with us */
 
-#work-with-us .container {
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 992px;
+    #work-with-us .container {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
 
-}
+    }
 
-.card-wwu {
-    width: calc(100% / 2 - 20px);
-}
+    .card-wwu {
+        width: calc(100% / 2 - 20px);
+    }
 
-/* about us */
-
-
-#about-us .container {
-    max-width: 992px;
-    display: flex;
-    margin: 30px auto;
-    line-height: 2;
+    /* about us */
 
 
-}
+    #about-us .container {
+        max-width: 100%;
+        display: flex;
+        margin: 30px auto;
+        line-height: 2;
 
-.text-about {
-    width: 60%;
-    padding: 20px;
-}
 
-.img-col {
-    width: 40%;
-    margin: 20px;
-    padding: 20px;
-}
+    }
 
-#about-us i{
-    vertical-align:top;
-   
+    .text-about {
+        width: 60%;
+        padding: 20px;
+    }
 
-}
-#about-us h2{
-    font-size: 6em;
-}
+    .img-col {
+        width: 40%;
+        margin: 20px;
+        padding: 20px;
+    }
 
-/* get started */
+    #about-us i {
+        vertical-align: top;
+
+
+    }
+
+    #about-us h2 {
+        font-size: 6em;
+    }
+
+    /* get started */
 
 }
 
 @media screen and (min-width:1200px) {
 
-    header .container{
-        max-width: 1200px;
-        width: 100%;
+    header .container {
+        max-width: 100%;;
     }
 
-    header nav i {
-        display: none;
+    header nav {
+        display: flex;
     }
 
+    header nav ul {
+       display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        top: -35px;
+        border: none;
+        background-color: transparent;
+
+    }
+
+    header nav li {
+       margin: 20px;
+    }
+
+
+    i.fa-bars  {
+       display: none;
+    }
+
+
+
+
+/* custom */
+
+    #custom-app .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .left-custom{
+        width: 40%;
+    }
+
+    .right-custom{
+        width: 40%;
+        
+    }
+
+    /* work with us */
+
+    #work-with-us .container{
+        max-width: 100%;
+
+
+    }
+
+    .card-wwu{
+        width: calc(100% / 3 - 15px);
+    }
 
     
+
+
 }
