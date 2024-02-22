@@ -196,7 +196,23 @@ main {
 
 }
 
-.text-testimonials {}
+/* work-with-us */
+
+.button-wwu{
+    background-color: #9792e4;
+    margin: 10px auto;
+
+}
+
+.card-wwu {
+    background-color: white;
+    color: #9792e4;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+
 
 
 
