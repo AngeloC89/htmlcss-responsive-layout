@@ -1,0 +1,63 @@
+/* ***************** general *********************/
+
+
+:root {
+	--color-header: #0084fd;
+	--color-background card: #b5ddff;
+	--color-background secion:#9792e4;
+	--color-text orange: #fdc15f;
+	--color-button white: #ffffff ;
+	--color-footer: #333333 ;
+}
+
+img{
+    width: 100%;
+    display: block
+}
+
+.color-sec {
+    background-color: #9792e4;
+}
+
+.border-card{
+    border-radius: 20px;
+
+}
+
+
+
+/* header */
+header{
+    background-color: var(--color-header);
+
+}
+
+#logo{
+    width: 30%;
+}
+
+
+
+/* main */
+
+#info .card{
+    background-color: #b5ddff;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.img-content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* ************* utility ******************** */
+
+.container{
+    max-width: 576px;
+    width: 100%;
+}
+.card{
+
+}

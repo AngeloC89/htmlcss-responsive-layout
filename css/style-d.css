@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* utility */
+
+.debug, section,  header {
+    border: 1px solid red;
+}
+/* flex */
+
+.d-flex {
+    display: flex;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.j-c-bet{
+    justify-content: space-between;
+}
+.j-c-end{
+    justify-content: flex-end;
+}
+
+.j-c-center {
+    justify-content: center;
+}
+
+.align-c-c{
+    align-content: center;
+    align-items: center;
+}
+
+.align-c-s{
+    align-items: flex-start;
+    align-content: flex-start;
+}
