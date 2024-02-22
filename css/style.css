@@ -2,15 +2,20 @@
 
 
 :root {
-	--color-header: #0084fd;
-	--color-background card: #b5ddff;
-	--color-background secion:#9792e4;
-	--color-text orange: #fdc15f;
-	--color-button white: #ffffff ;
-	--color-footer: #333333 ;
+    --color-header: #0084fd;
+    --color-background card: #b5ddff;
+    --color-background secion: #9792e4;
+    --color-text orange: #fdc15f;
+    --color-button white: #ffffff;
+    --color-footer: #333333;
 }
 
-img{
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+
+img {
     width: 100%;
     display: block
 }
@@ -19,45 +24,145 @@ img{
     background-color: #9792e4;
 }
 
-.border-card{
-    border-radius: 20px;
 
+.container {
+    max-width: 576px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+p{
+    line-height: 2;
+}
+
+h3{
+    margin: 20px 0px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
 
 /* header */
-header{
+header {
     background-color: var(--color-header);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+
 
 }
 
-#logo{
-    width: 30%;
+header nav ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color-header);
+    display: none;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 100px;
+    height: 200px;
+
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    
+}
+
+header nav:hover ul{
+    display: flex;
+}
+
+header a {
+    color: white;
+}
+
+section{
+    padding: 20px;
+    scroll-margin-top: 75px;
+}
+
+
+#logo img{
+    width: 80%;
 }
 
 
 
 /* main */
 
-#info .card{
+main{
+    padding-top:70px;
+}
+
+#info{
+    margin-top: 150px;
+}
+
+
+#info .card {
     background-color: #b5ddff;
     margin: 10px 0;
     border-radius: 20px;
+    padding: 10px 20px;
+    line-height: 2em;
+    text-align: center;
 }
 
-.img-content{
+#info>.container.card{
+    padding-bottom: 0px;
+}
+
+#info h3{
+    color: var(--color-header);
+}
+
+#info i{
+
+    color: var(--color-header);
+    
+}
+.img-content {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 
+/* footer */
+
+footer {
+    background-color: var(--color-footer);
+}
 
 /* ************* utility ******************** */
-
-.container{
-    max-width: 576px;
-    width: 100%;
+.icon-color{
+    color: var(--color-header);
 }
-.card{
+.border-card {
+    border-radius: 20px;
 
+}
+
+.text-center{
+    text-align: center;
+}
+
+.i-size{
+    font-size: 3em;
 }
