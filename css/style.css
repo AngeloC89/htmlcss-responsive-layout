@@ -163,8 +163,18 @@ main {
     padding: 20px;
     margin: 20px auto;
 
+
 }
 
+.button-custom {
+    background-color: #9792e4;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    vertical-align: center;
+    margin: 20px auto;
+
+}
 
 /* partner */
 #partner img {
@@ -178,10 +188,11 @@ main {
 
 }
 
-.text-testimonials{
+.text-testimonials {
     color: white;
     padding: 30px;
 }
+
 .card-testimonials {
     margin: 30px auto;
     object-fit: fill;
@@ -203,7 +214,13 @@ main {
 
 /* work-with-us */
 
-.button-wwu{
+
+#work-with-us>h2 {
+    color: white;
+    text-align: center;
+}
+
+.button-wwu {
     background-color: #9792e4;
     margin: 10px auto;
 
@@ -217,29 +234,31 @@ main {
     margin: 20px auto;
 }
 
-#about-us img{
+
+/* about us */
+#about-us img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#about-us i{
+#about-us i {
     color: #9792e4;
 }
-.img-about{
+
+.img-about {
 
     width: 50%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
- 
+
 
 }
 
-.card-inside-about{
+.card-inside-about {}
 
-}
-.text-us{
+.text-us {
     width: 50%;
     font-size: 100px;
     position: absolute;
@@ -248,9 +267,10 @@ main {
     z-index: 1000;
 }
 
-.button-about{
+.button-about {
     background-color: #9792e4;
-    border-radius: 20px;: ;
+    border-radius: 20px;
+    : ;
 }
 
 
@@ -290,47 +310,88 @@ footer {
 
 @media screen and (min-width:992px) {
 
-    header div.container{
+    header div.container {
         max-width: 992px;
     }
-   #info .card:first-child{
-    width: calc(100% / 3 * 2 - 20px);
-    display: flex;
-   }
 
-   #info .card{
-    width: calc(100% / 3 - 20px);
-   }
-    
-    #info .container{
+    #info .card:first-child {
+        width: calc(100% / 3 * 2 - 20px);
+        display: flex;
+    }
+
+    #info .card {
+        width: calc(100% / 3 - 20px);
+    }
+
+    #info .container {
         gap: 20px;
         max-width: 992px;
         display: flex;
         flex-wrap: wrap;
 
     }
-    .text.content{
+
+    .text.content {
         width: 20%;
     }
-    
+
     /* testimonial */
 
-    #partner .container{
+    #partner .container {
         max-width: 992px;
     }
 
-    .card-testimonials{
+    .card-testimonials {
         display: flex;
     }
-    
+
     .img-testimonials {
         width: 20%;
     }
 
-    .text-testimonials{
+    .text-testimonials {
         width: 80%;
         color: white;
         padding: 30px;
     }
-        
+
+
+
+/* work with us */
+
+#work-with-us .container {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 992px;
+
+}
+
+.card-wwu {
+    width: calc(100% / 2 - 20px);
+}
+
+/* about us */
+
+
+#about-us .container {
+    max-width: 992px;
+    display: flex;
+
+
+}
+
+.text-about {
+    width: 60%;
+}
+
+.img-col {
+    width: 40%;
+}
+
+
+.card-inside-about {
+    display: flex;
+    flex-direction: column;
+}
 }
