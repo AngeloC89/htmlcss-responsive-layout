@@ -62,6 +62,7 @@ header {
     width: 100%;
     padding: 20px 40px;
     display: flex;
+    z-index: 3000;
 
 
 }
@@ -177,6 +178,10 @@ main {
 
 }
 
+.text-testimonials{
+    color: white;
+    padding: 30px;
+}
 .card-testimonials {
     margin: 30px auto;
     object-fit: fill;
@@ -187,7 +192,7 @@ main {
 }
 
 .img-testimonials {
-    width: 30%;
+    width: 50%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
@@ -231,12 +236,16 @@ main {
 
 }
 
+.card-inside-about{
+
+}
 .text-us{
     width: 50%;
     font-size: 100px;
     position: absolute;
     top: 0;
     right: 60px;
+    z-index: 1000;
 }
 
 .button-about{
@@ -280,19 +289,48 @@ footer {
 /**************media query****************** */
 
 @media screen and (min-width:992px) {
-   
-    
+
+    header div.container{
+        max-width: 992px;
+    }
+   #info .card:first-child{
+    width: calc(100% / 3 * 2 - 20px);
+    display: flex;
+   }
+
+   #info .card{
+    width: calc(100% / 3 - 20px);
+   }
     
     #info .container{
-        width: calc(100% / 2);
+        gap: 20px;
         max-width: 992px;
         display: flex;
         flex-wrap: wrap;
 
     }
+    .text.content{
+        width: 20%;
+    }
+    
+    /* testimonial */
 
-    #info .card{
+    #partner .container{
+        max-width: 992px;
+    }
+
+    .card-testimonials{
         display: flex;
     }
     
+    .img-testimonials {
+        width: 20%;
+    }
+
+    .text-testimonials{
+        width: 80%;
+        color: white;
+        padding: 30px;
+    }
+        
 }
