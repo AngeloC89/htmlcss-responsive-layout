@@ -38,11 +38,11 @@ li {
     list-style: none;
 }
 
-p{
+p {
     line-height: 2;
 }
 
-h3{
+h3 {
     margin: 20px 0px;
 }
 
@@ -66,7 +66,7 @@ header {
 
 }
 
-header nav ul{
+header nav ul {
     position: absolute;
     top: 0;
     right: 0;
@@ -79,13 +79,13 @@ header nav ul{
 
 }
 
-header nav{
+header nav {
     position: relative;
     display: flex;
-    
+
 }
 
-header nav:hover ul{
+header nav:hover ul {
     display: flex;
 }
 
@@ -93,13 +93,13 @@ header a {
     color: white;
 }
 
-section{
+section {
     padding: 20px;
     scroll-margin-top: 75px;
 }
 
 
-#logo img{
+#logo img {
     width: 80%;
 }
 
@@ -107,11 +107,11 @@ section{
 
 /* main */
 
-main{
-    padding-top:70px;
+main {
+    padding-top: 70px;
 }
 
-#info{
+#info {
     margin-top: 150px;
 }
 
@@ -121,28 +121,87 @@ main{
     margin: 10px 0;
     border-radius: 20px;
     padding: 10px 20px;
-    line-height: 2em;
+    line-height: 1.7em;
     text-align: center;
 }
 
-#info>.container.card{
+#info .card:first-child {
     padding-bottom: 0px;
 }
 
-#info h3{
+#info h3 {
     color: var(--color-header);
 }
 
-#info i{
+#info i {
 
     color: var(--color-header);
-    
+
 }
+
 .img-content {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 0;
+
 }
+
+/* custom-app */
+.left-custom {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    color: white;
+    text-align: left;
+
+}
+
+.right-custom {
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px auto;
+
+}
+
+
+/* partner */
+#partner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials {
+    text-align: center;
+
+}
+
+.card-testimonials {
+    margin: 30px auto;
+    object-fit: fill;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.img-testimonials {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+
+
+}
+
+.text-testimonials {}
+
+
+
+
+
 
 /* footer */
 
@@ -151,18 +210,19 @@ footer {
 }
 
 /* ************* utility ******************** */
-.icon-color{
+.icon-color {
     color: var(--color-header);
 }
+
 .border-card {
     border-radius: 20px;
 
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.i-size{
+.i-size {
     font-size: 3em;
 }
