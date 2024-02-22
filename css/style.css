@@ -212,7 +212,37 @@ main {
     margin: 20px auto;
 }
 
+#about-us img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+#about-us i{
+    color: #9792e4;
+}
+.img-about{
+
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+ 
+
+}
+
+.text-us{
+    width: 50%;
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    right: 60px;
+}
+
+.button-about{
+    background-color: #9792e4;
+    border-radius: 20px;: ;
+}
 
 
 
@@ -241,4 +271,28 @@ footer {
 
 .i-size {
     font-size: 3em;
+}
+
+
+
+
+
+/**************media query****************** */
+
+@media screen and (min-width:992px) {
+   
+    
+    
+    #info .container{
+        width: calc(100% / 2);
+        max-width: 992px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #info .card{
+        display: flex;
+    }
+    
 }
