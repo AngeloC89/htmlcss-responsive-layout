@@ -128,13 +128,14 @@ main {
 
 #info .card:first-child {
     padding-bottom: 0px;
+
 }
 
 #info h3 {
     color: var(--color-header);
 }
 
-#info i {
+.info-i {
 
     color: var(--color-header);
 
@@ -142,8 +143,19 @@ main {
 
 .img-content {
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
 
+}
+
+.text-content{
+    margin: 20px auto;
+}
+.button-apple{
+    background-color:var(--color-header);
+    color: white;
+    border-radius: 30px ;
+    padding: 10px;
+    margin: 40px auto;
 }
 
 /* custom-app */
@@ -175,6 +187,9 @@ main {
     margin: 20px auto;
 
 }
+
+
+
 
 /* partner */
 #partner img {
@@ -245,9 +260,15 @@ main {
 #about-us i {
     color: #9792e4;
 }
-
+ 
+#about-us h2{
+    color: #9792e4;
+    font-size: 4em;
+}
+#about-us h3{
+    color: #9792e4;
+}
 .img-about {
-
     width: 50%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
@@ -256,7 +277,9 @@ main {
 
 }
 
-.card-inside-about {}
+.card-inside-about {
+    margin: 20px;
+}
 
 .text-us {
     width: 50%;
@@ -270,19 +293,49 @@ main {
 .button-about {
     background-color: #9792e4;
     border-radius: 20px;
-    : ;
+    
 }
 
 
+/* get started */
 
+#get-started{
+    text-align: center;
+    color: white;
+}
+#get-started h2{
+    color: #fdc15f;
+    font-size: 6em;
+}
+#get-started h3{
+    font-size: 3em;
+    
+}
 
+#get-started h4{
+    font-weight: 100;
+}
 
+.button-get{
+    background-color: white ;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px auto;
+    font-size: 2em;
+    width: 50%;
+}
 
 /* footer */
 
 footer {
     background-color: var(--color-footer);
+    text-align: center;
+    color: white;
 }
+
+
+
+
 
 /* ************* utility ******************** */
 .icon-color {
@@ -377,21 +430,47 @@ footer {
 #about-us .container {
     max-width: 992px;
     display: flex;
+    margin: 30px auto;
+    line-height: 2;
 
 
 }
 
 .text-about {
     width: 60%;
+    padding: 20px;
 }
 
 .img-col {
     width: 40%;
+    margin: 20px;
+    padding: 20px;
 }
 
+#about-us i{
+    vertical-align:top;
+   
 
-.card-inside-about {
-    display: flex;
-    flex-direction: column;
 }
+#about-us h2{
+    font-size: 6em;
+}
+
+/* get started */
+
+}
+
+@media screen and (min-width:1200px) {
+
+    header .container{
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    header nav i {
+        display: none;
+    }
+
+
+    
 }
