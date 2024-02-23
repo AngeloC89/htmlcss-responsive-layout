@@ -71,12 +71,16 @@ header nav ul {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--color-header);
+    background-color: #5ea9f0d1;
     display: none;
     flex-direction: column;
-    border: 1px solid white;
-    width: 100px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
+    line-height: 2;
+    border-radius: 30px 5px 30px 5px;
+    padding: 10px;
+    box-shadow: -17px 12px 24px 0px #5ea9f0a1;
+    
 
 }
 
@@ -90,6 +94,9 @@ header nav:hover ul {
     display: flex;
 }
 
+header nav a:hover {
+    color: orangered;
+}
 header a {
     color: white;
 }
@@ -234,11 +241,24 @@ main {
 #work-with-us>h2 {
     color: white;
     text-align: center;
+    margin: 20px auto;
+}
+#work-with-us h2 {
+    font-size: 3em;
+    
+}
+#work-with-us p {
+    margin: 20px 0px;
+    color: black;
+   
 }
 
-.button-wwu {
+.button-wwu a{
     background-color: #9792e4;
-    margin: 10px auto;
+    color: white;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 5px 35px;
 
 }
 
@@ -258,9 +278,6 @@ main {
     object-fit: cover;
 }
 
-#about-us i {
-    color: #9792e4;
-}
 
 #about-us h2 {
     color: #9792e4;
@@ -285,6 +302,7 @@ main {
 }
 
 .text-us {
+    color: #9792e4;
     width: 50%;
     font-size: 100px;
     position: absolute;
@@ -293,12 +311,17 @@ main {
     z-index: 1000;
 }
 
-.button-about {
+.button-about a{
     background-color: #9792e4;
+    color: white;
     border-radius: 20px;
+    padding: 10px 30px ;
 
 }
 
+.button-about i{
+    font-size: 20px;
+}
 
 /* get started */
 
@@ -321,6 +344,11 @@ main {
     font-weight: 100;
 }
 
+#get-started h6 a{
+    color: white;
+    text-decoration: underline;
+}
+
 .button-get {
     background-color: white;
     padding: 10px;
@@ -336,6 +364,11 @@ footer {
     background-color: var(--color-footer);
     text-align: center;
     color: white;
+}
+
+footer a{
+    color: #9792e4;
+    text-decoration: underline;
 }
 
 
@@ -469,7 +502,8 @@ footer {
 @media screen and (min-width:1200px) {
 
     header .container {
-        max-width: 100%;;
+        max-width: 100%;
+        ;
     }
 
     header nav {
@@ -477,57 +511,59 @@ footer {
     }
 
     header nav ul {
-       display: flex;
+        position: inherit;
+        width: auto;
+        height: auto;
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        top: -35px;
-        border: none;
+        box-shadow: none;
         background-color: transparent;
 
     }
 
     header nav li {
-       margin: 20px;
+        margin: 0px 20px;
     }
 
 
-    i.fa-bars  {
-       display: none;
+    i.fa-bars {
+        display: none;
     }
 
 
 
 
-/* custom */
+    /* custom */
 
-    #custom-app .container{
+    #custom-app .container {
         display: flex;
         flex-wrap: wrap;
         max-width: 100%;
     }
 
-    .left-custom{
+    .left-custom {
         width: 40%;
     }
 
-    .right-custom{
+    .right-custom {
         width: 40%;
-        
+
     }
 
     /* work with us */
 
-    #work-with-us .container{
+    #work-with-us .container {
         max-width: 100%;
 
 
     }
 
-    .card-wwu{
+    .card-wwu {
         width: calc(100% / 3 - 15px);
     }
 
-    
+
 
 
 }
